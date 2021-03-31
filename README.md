@@ -1,4 +1,4 @@
-# _{Application Name}_
+<!-- # _{Application Name}_
 #### _{Brief description of application}_
 #### By _**{List of contributors}**
 ## Technologies Used
@@ -21,4 +21,42 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 ## License
 _{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
 ## Contact Information
-_{Add your contact information here.}_
+_{Add your contact information here.}_ -->
+## Specs
+
+Describe identifyAllVowels()
+
+Test: "It should turn the passage provided to an Array."
+Code: identifyAllVowles("cats catered the event")
+Expected Output: ["cats", "catered", "the", "event"]
+
+Test: "It should identify any vowel within any word."
+Code: identifyAllVowles("cats catered the event")
+Expected Output: 7
+
+Test: "It should identify if a vowel is at the beginning of the word."
+Code: identifyAllVowels("cats catered the event")
+Expected Output: 1
+
+Test: "It should concat the string "way" to the end of the word."
+Code indentifyAllVowels("cats catered the event")
+Expected Output: "eventway"
+
+Test: "It should return the altered string back to the original passage."
+Code indentifyAllVowels("cats catered the event")
+Expected Output: "cats catered the eventway"
+
+Describe beginningConsonants()
+
+Test: "It should turn the passage provided to an Array."
+Code: beginningConsonants("cats catered the event")
+Expected Output: ["cats", "catered", "the", "event"] ethay
+
+Test: "It should return a consonant from any string within the array"
+Code: beginningConsonants("cats catered the event")
+Expected Output: ["c", "t", "s", "c", "t", "r", "d", "t", "h", "v", "n", "t"]
+
+Test: "It should return only consonants at the beginning of the string's index."
+Code: beginningConsonants("cats catered the event")
+Expected Output: ["c", "c", "t"]
+
