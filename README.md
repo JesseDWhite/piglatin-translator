@@ -60,3 +60,46 @@ Test: "It should return only consonants at the beginning of the string's index."
 Code: beginningConsonants("cats catered the event")
 Expected Output: ["c", "c", "t"]
 
+Test: "If there are two consonants at the beginning return both."
+Code: beginningConsonants("the");
+Expected Output: ["th"]
+
+Test: "Concat the first two consonants to the string."
+Code: beginningCOnsonants("the");
+Expected Output: ["eth"]
+
+Test: "Concat the last to letters of the string to ay."
+Code: beginningConsonants("the);
+Expected Output: ["ethay"]
+
+Describe specificConsonants()
+
+Test: "It should test whether or not the string has consonants qu combined."
+Code: specificConsonants("cats catered the quiet cat");
+Expected Output: ["quiet"]
+
+Test: "It should splice the first two letters and put it in an array."
+Code: specificConsonants("ats catered the quiet cat");
+Expected Output: ["qu"]
+
+Test: "It should reverse the string in the array."
+Code: specificConsonants("qu");
+Expected Output: ["uq"]
+
+Test: "Concat the reversed string to original string."
+Code: specificConsonants("quiet");
+Expected Output: ["uqiet"]
+
+Describe yConsonant()
+
+Test: "It should identify any word with y."
+Code: yConsonant("there was a lazy dog in the yard")
+Expected Output: ["lazy", "yard"]
+
+Test: "Identify if the first index of a word returns the letter y."
+Code: yConsonant("there was a lazy dog in the yard")
+Expected Output: ["yard"]
+
+Test: "Passing in beginningConsonants() function."
+Code: yConsonant(beginningConsonants(text));
+Expected Output: ["ardyay"]
