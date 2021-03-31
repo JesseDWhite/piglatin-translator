@@ -7,17 +7,14 @@ const vowels = ["a", "e", "i", "o", "u"];
 
 function identifyAllVals(text) {
     const wordArray = text.split(" ");
-
     wordArray.forEach(function (element) {
         const compareArray = element.split("");
         for (let i = 0; i < vowels.length; i++) {
             if (compareArray[0].toLowerCase() === vowels[i]) {
-                element.concat("way")
+                element.concat("way");
             }
-            return console.log(wordArray);
-        }
+        } return element.concat("way");
     })
-
 }
 
 // -----User Interface Logic-----
