@@ -11,7 +11,7 @@ function identifyAllVals(text) {
     wordArray.forEach(function (element) {
         const compareArray = element.split("");
         for (let i = 0; i < vowels.length; i++) {
-            if (compareArray[0] === vowels[i]) {
+            if (compareArray[0].toLowerCase() === vowels[i]) {
                 element.concat("way")
             }
             return console.log(wordArray);
